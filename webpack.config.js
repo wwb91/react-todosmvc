@@ -8,12 +8,12 @@ module.exports = {
         path: path.resolve(__dirname, 'dist')
     },
     plugins: [
-        new webpack.optimize.UglifyJsPlugin({
-            compress: {
-                warnings: false
-            },
-            sourceMap: true
-        })
+        // new webpack.optimize.UglifyJsPlugin({
+        //     compress: {
+        //         warnings: false
+        //     },
+        //     sourceMap: true
+        // })
     ]
 
 };

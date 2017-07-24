@@ -1,20 +1,10 @@
-html{
-  height: 100%;
+body{
+  background: #ddd;
 }
-body {
-  margin: 0;
-  padding: 0;
-  font-family: "微软雅黑";
-  height: 100%;
+#root{
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
 }
 
-#root {
-  width: 100%; 
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color:#aedff9;
-  background-color: #2d8ff3;
-  
-}
+

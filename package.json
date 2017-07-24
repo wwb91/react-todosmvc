@@ -4,9 +4,11 @@
   "private": true,
   "homepage": "https://cnwang.github.io/webpack-study/build",
   "dependencies": {
+    "normalize.css": "^7.0.0",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
-    "react-scripts": "1.0.10"
+    "react-scripts": "1.0.10",
+    "reset.css": "^2.0.2"
   },
   "scripts": {
     "start": "react-scripts start",

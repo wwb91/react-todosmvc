@@ -21,7 +21,7 @@ class App extends Component {
     let todos = this.state.todoList.map((item, index) => {
       return (
         <li key={index} >
-          <TodoItem todo={item} onToggle={this.toggle.bind(this)} />
+          <TodoItem todo={item} onToggle={this.toggle.bind(this)} onDeleteTodo={this.deleteTodo.bind(this)}/>
         </li>
       )
     })
@@ -48,6 +48,13 @@ class App extends Component {
       status: null,
       deleted: false
     })
+    this.setState({
+      newTodo: '',
+      todoList: this.state.todoList
+    })
+  }
+  deleteTodo(e,todo) {
+    this.state.todoList.splice(this.state.todoList.indexOf(todo),1)
     this.setState({
       newTodo: '',
       todoList: this.state.todoList

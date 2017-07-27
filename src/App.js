@@ -64,6 +64,7 @@ class App extends Component {
     todo.status = todo.status === 'completed' ? '' : 'completed'
     this.setState(this.state);
   }
+
   changeTitle(event) {
     this.setState({
       newTodo: event.target.value,

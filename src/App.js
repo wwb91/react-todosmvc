@@ -214,7 +214,7 @@ class App extends Component {
     this.state.todoList.splice(index, 1)
   }
   remain() {
-    return filters.active(this.state.todoList).length
+    return filters.active(this.state.todoListSub).length
   }
   clear() {
     let todoList = filters.active(this.state.todoListSub)
